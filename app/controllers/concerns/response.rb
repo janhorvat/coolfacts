@@ -1,4 +1,4 @@
-module Api::V1::Concerns::Response
+module Concerns::Response
   extend ActiveSupport::Concern
 
   def success_response(content={})
