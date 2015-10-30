@@ -8,8 +8,7 @@ class FactsController < ApplicationController
       }).results.sample
 
       success_response({
-        title: fact.title,
-        url: fact.url
+        text: fact.title + " <" + fact.url + "|read more>"
       })
     end
 
