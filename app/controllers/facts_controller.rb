@@ -7,7 +7,7 @@ class FactsController < ApplicationController
         time: "month", limit: 100
       }).results.sample
 
-      success_response(fact.title + " <a href='" + fact.url + "'> More</a>")
+      success_response(fact.title + " <" + fact.url + "|More>")
     end
 
 end
